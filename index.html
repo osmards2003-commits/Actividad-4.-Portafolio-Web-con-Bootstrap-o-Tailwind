@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <!-- Cargamos Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Vinculamos tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/portafolio.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Hero Section / Presentación Principal -->
+    <header class="min-h-[60vh] flex flex-col justify-center items-center bg-gradient-to-b from-blue-50 to-gray-50 px-4 py-16 text-center">
+        <!-- Contenedor de la Foto -->
+        <div class="photo-container w-40 h-40 rounded-full border-4 border-white shadow-lg overflow-hidden mb-6 bg-gray-200 flex items-center justify-center relative">
+            <img src="img/perfil.jpeg" alt="Tu Foto Formal" id="profile-img" class="w-full h-full object-cover">
+            <i class="fa-solid fa-user text-5xl text-gray-400 absolute fallback-icon hidden"></i>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-2">
+            Santiago Vásquez David Osmar
+        </h1>
+        <p class="text-lg md:text-xl text-blue-600 font-medium mb-8">
+            Estudiante de Ingeniería en Sistemas Computacionales
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#proyectos" class="btn-primary bg-gray-900 hover:bg-gray-800 text-white font-medium px-6 py-3 rounded-xl shadow-sm transition duration-300 transform hover:-translate-y-0.5">
+                <i class="fa-solid fa-briefcase mr-2"></i>Ver proyectos
+            </a>
+            <a href="#contacto" class="btn-secondary bg-white hover:bg-gray-100 text-gray-700 font-semibold px-6 py-3 rounded-xl shadow-sm border border-gray-200 transition duration-300 transform hover:-translate-y-0.5">
+                <i class="fa-solid fa-envelope mr-2"></i>Contáctame
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 relative inline-block section-title">
+            Sobre mí
+            <span class="absolute bottom-0 left-1/4 right-1/4 h-1 bg-blue-500 rounded-full"></span>
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+            Soy estudiante del Tecnológico de Oaxaca enfocado en el desarrollo de soluciones lógicas, eficientes y escalables. Me apasiona el diseño de arquitecturas de software, la administración avanzada de datos y la gestión de infraestructura de red para resolver problemas complejos del entorno real.
+        </p>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="bg-white border-y border-gray-100 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Habilidades y Tecnologías</h2>
+                <p class="text-gray-500">Herramientas que domino y áreas tecnológicas en constante desarrollo:</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-brands fa-html5 text-orange-500 text-2xl"></i>
+                    <span class="font-medium text-gray-700">HTML5 / CSS3</span>
+                </div>
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-brands fa-js text-yellow-500 text-2xl"></i>
+                    <span class="font-medium text-gray-700">JavaScript</span>
+                </div>
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-brands fa-font-awesome text-blue-500 text-2xl"></i>
+                    <span class="font-medium text-gray-700">Tailwind CSS</span>
+                </div>
+                <!-- Reemplazo de Node.js por Java -->
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-brands fa-java text-red-600 text-2xl"></i>
+                    <span class="font-medium text-gray-700">Java</span>
+                </div>
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-solid fa-database text-blue-600 text-2xl"></i>
+                    <span class="font-medium text-gray-700">SQL & NoSQL</span>
+                </div>
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-solid fa-server text-purple-600 text-2xl"></i>
+                    <span class="font-medium text-gray-700">Oracle / Postgres</span>
+                </div>
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-brands fa-git-alt text-orange-600 text-2xl"></i>
+                    <span class="font-medium text-gray-700">Git & GitHub</span>
+                </div>
+                <div class="skill-card flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100 transition duration-300">
+                    <i class="fa-brands fa-ubuntu text-orange-700 text-2xl"></i>
+                    <span class="font-medium text-gray-700">Linux Server</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Proyectos Proyectados</h2>
+            <p class="text-gray-500">Iniciativas y sistemas bajo planeación para resolver retos del mundo real:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Proyecto 1: Vidriería -->
+            <div class="project-card bg-white rounded-2xl border border-gray-100 shadow-sm transition duration-300 flex flex-col h-full overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4 text-blue-600 text-xl">
+                        <i class="fa-solid fa-window-restore"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sistema de Gestión de Pedidos para Vidriería</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Diseño conceptualizado para la administración y control de inventarios, generación automatizada de cotizaciones personalizadas de corte y control estricto de flujo de pedidos para un establecimiento de vidrios y aluminios.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 flex flex-wrap gap-2">
+                    <span class="text-xs font-semibold bg-blue-100 text-blue-800 px-2.5 py-1 rounded-md">Java</span>
+                    <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2.5 py-1 rounded-md">SQLite / SQL</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: INEGI y CFE -->
+            <div class="project-card bg-white rounded-2xl border border-gray-100 shadow-sm transition duration-300 flex flex-col h-full overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 text-emerald-600 text-xl">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Sistema de Base de Datos INEGI-CFE</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Modelo de arquitectura de bases de datos relacionales robustas enfocado en la correlación de información demográfica del INEGI con consumos y contratos de servicios de la Comisión Federal de Electricidad (CFE) para análisis e indicadores estadísticos.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 flex flex-wrap gap-2">
+                    <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-md">Oracle 19c</span>
+                    <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2.5 py-1 rounded-md">Modelado Relacional</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Protocolos de Red -->
+            <div class="project-card bg-white rounded-2xl border border-gray-100 shadow-sm transition duration-300 flex flex-col h-full overflow-hidden">
+                <div class="p-6 flex-grow">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center mb-4 text-purple-600 text-xl">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Distribución y Administración de Servicios de Red</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Laboratorio enfocado en la planeación y distribución de topologías de red en entornos Linux Server, integrando de forma centralizada protocolos esenciales de comunicación corporativa como SSH, HTTP, DNS, DHCP y FTP.
+                    </p>
+                </div>
+                <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 flex flex-wrap gap-2">
+                    <span class="text-xs font-semibold bg-purple-100 text-purple-800 px-2.5 py-1 rounded-md">Ubuntu Server</span>
+                    <span class="text-xs font-semibold bg-gray-200 text-gray-700 px-2.5 py-1 rounded-md">Seguridad en Redes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <footer id="contacto" class="bg-gray-900 text-gray-300 py-16 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-white mb-8">Contacto</h2>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 mb-8">
+                <div class="flex items-center gap-3 contact-item">
+                    <i class="fa-solid fa-phone text-blue-400 text-lg"></i>
+                    <span>951 465 5277</span>
+                </div>
+                <div class="flex items-center gap-3 contact-item">
+                    <i class="fa-solid fa-envelope text-blue-400 text-lg"></i>
+                    <a href="mailto:22161181@itoaxaca.edu.mx" class="hover:text-white transition">22161181@itoaxaca.edu.mx</a>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 mt-8 text-xs text-gray-500">
+                &copy; 2026 Santiago Vásquez David Osmar. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vinculamos tu archivo JS al final para optimizar la carga -->
+    <script src="js/portafolio.js"></script>
+</body>
+</html>
