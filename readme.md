@@ -28,7 +28,7 @@ El diseño estructural toma como base los lineamientos minimalistas y de espacia
 * **Tailwind CSS Components Docs:** [https://tailwindcss.com](https://tailwindcss.com)
 * **FontAwesome Icon Pack (CDN):** [https://cdnjs.com/libraries/font-awesome](https://cdnjs.com/libraries/font-awesome)
 * **Plantilla de diseño:** <script src="js/portafolio.js"></script>
-* **Diseño de portafolio:**  <link rel="stylesheet" href="css/portafolio.css">
+* **Diseño de portafolio:**<link rel="stylesheet" href="css/portafolio.css">
 
 
 ---
